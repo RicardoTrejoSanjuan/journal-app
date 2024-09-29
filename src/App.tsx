@@ -1,9 +1,10 @@
-function App() {
+import { AppRouter } from "./router/AppRouter"
+import { AppTheme } from "./theme"
+
+export const App = () => {
   return (
-    <>
-    <h1>hola</h1>
-    </>
+    <AppTheme>
+      <AppRouter />
+    </AppTheme>
   )
 }
-
-export default App
